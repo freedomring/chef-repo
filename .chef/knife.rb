@@ -1,0 +1,10 @@
+log_level :info
+log_location STDOUT
+node_name "nodename"
+client_key "$HOME/.chef/$USER.pem"
+validation_client_name "freedomring-validator"
+validation_key "$HOME/freedomring-validator.pem"
+chef_server_url "https://api.opscode.com/organizations/freedomring"
+cache_type 'BasicFile'
+cache_options "$HOME/.chef/checksums"
+cookbook_path "$HOME/src/chef-repo/cookbooks"
